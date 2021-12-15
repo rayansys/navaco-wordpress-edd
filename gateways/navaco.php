@@ -7,7 +7,7 @@ class EDD_navaco_Gateway
 {
 	public $keyname;
     public function callCurl($postField,$action){
-        $url = "http://79.174.161.132:8181/nvcservice/Api/v2/";
+        $url = "https://fcp.shaparak.ir/nvcservice/Api/v2/";
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url.$action);
         curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type' => 'application/json'));
